@@ -19,9 +19,9 @@ public class InventoryserviceApplication {
 		restConfiguration.exposeIdsFor(Product.class);
 		return args -> {
 
-			productRepository.save(new Product(null,"Computer Desk Top HP",900,20));
-			productRepository.save(new Product(null,"Printer Epson",80,50));
-			productRepository.save(new Product(null,"MacBook Pro Lap Top",1800,90));
+			productRepository.save(new Product(null,"Pc hp",9000,80));
+			productRepository.save(new Product(null,"Imprimante 3D",800,20));
+			productRepository.save(new Product(null,"Souris Gamer",1800,70));
 			productRepository.findAll().forEach(p->{
 				System.out.println(p.getName());
 			});
